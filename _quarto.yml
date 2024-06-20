@@ -1,21 +1,22 @@
 project:
   type: website
   #resources: ["documents/screenplay.pdf","documents/vegetation_in_r.pdf"]
-  output-dir: docs
+  output-dir: _site
   preview: 
     port: 4200
     browser: true
+  render:
+    - "*.qmd"
+    #- "!Topics/Quarto/quarto-intro-slides.qmd"
 
 website:
   title: ""
   favicon: /images/favicon.ico
-  #sidebar:
-  #  logo: /images/logo.png
   navbar:
+    logo: /images/logo.png
     left:
       - href: index.qmd
         text: Home
-    #logo: /images/logo.png
     right: 
       - href: updates.qmd
         text: Updates
@@ -29,3 +30,4 @@ format:
     theme: litera
     css: styles.css
     toc: true
+    mainfont: FreeSans
