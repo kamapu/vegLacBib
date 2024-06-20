@@ -1,0 +1,31 @@
+project:
+  type: website
+  #resources: ["documents/screenplay.pdf","documents/vegetation_in_r.pdf"]
+  output-dir: docs
+  preview: 
+    port: 4200
+    browser: true
+
+website:
+  title: ""
+  favicon: /images/favicon.ico
+  #sidebar:
+  #  logo: /images/logo.png
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+    #logo: /images/logo.png
+    right: 
+      - href: updates.qmd
+        text: Updates
+      - href: ressources.qmd
+        text: Ressources
+      - href: people.qmd
+        text: People
+
+format:
+  html:
+    theme: litera
+    css: styles.css
+    toc: true
