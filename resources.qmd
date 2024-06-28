@@ -1,0 +1,13 @@
+---
+title: Resources
+listing:
+  contents: Blog
+  sort: "date desc"
+  type: default
+  categories: true
+---
+
+<!--
+For more details visit
+https://quarto.org/docs/websites/website-blog.html
+-->

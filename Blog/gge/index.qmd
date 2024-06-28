@@ -1,0 +1,16 @@
+---
+title: Georeferencing in Google Earth
+date: '2024-06-30'
+author: Miguel Alvarez
+date-modified: today
+#image: ai-programmer.jpg
+categories:
+  - Tutorial
+description:
+  Instructions to georeference using Google Earth.
+draft: false
+---
+
+Hello!
+
+

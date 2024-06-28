@@ -20,8 +20,8 @@ website:
     right: 
       - href: updates.qmd
         text: Updates
-      - href: ressources.qmd
-        text: Ressources
+      - href: resources.qmd
+        text: Resources
       - href: people.qmd
         text: People
 

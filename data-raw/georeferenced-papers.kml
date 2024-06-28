@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>georeferenced-papers.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>georeferenced-papers</name>
+		<open>1</open>
+		<Folder>
+			<name>Amigo2010</name>
+			<Placemark>
+				<name>Untitled Placemark</name>
+				<LookAt>
+					<longitude>-72.01885745913479</longitude>
+					<latitude>-37.494222644084</latitude>
+					<altitude>0</altitude>
+					<heading>2.361888356608467</heading>
+					<tilt>0</tilt>
+					<range>631739.11609548</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-71.47345628432615,-38.55703082174907,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Untitled Placemark</name>
+				<LookAt>
+					<longitude>-72.01885745913479</longitude>
+					<latitude>-37.494222644084</latitude>
+					<altitude>0</altitude>
+					<heading>2.361888356608467</heading>
+					<tilt>0</tilt>
+					<range>631739.11609548</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-71.39358454773934,-37.76169656233164,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Untitled Placemark</name>
+				<LookAt>
+					<longitude>-72.01885745913479</longitude>
+					<latitude>-37.494222644084</latitude>
+					<altitude>0</altitude>
+					<heading>2.361888356608467</heading>
+					<tilt>0</tilt>
+					<range>631739.11609548</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-71.51985771655917,-36.78285852425922,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Untitled Placemark</name>
+				<LookAt>
+					<longitude>-72.01885745913479</longitude>
+					<latitude>-37.494222644084</latitude>
+					<altitude>0</altitude>
+					<heading>2.361888356608467</heading>
+					<tilt>0</tilt>
+					<range>631739.11609548</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-71.37226302030578,-36.26706476136184,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Ramirez1975</name>
+			<Placemark>
+				<name>Untitled Placemark</name>
+				<LookAt>
+					<longitude>-73.16581105864496</longitude>
+					<latitude>-40.01372536353417</latitude>
+					<altitude>0</altitude>
+					<heading>0.5052528025042632</heading>
+					<tilt>0</tilt>
+					<range>52770.15876419391</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-73.1442327833489,-39.98709538194726,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Hauenstein2002</name>
+			<Placemark>
+				<name>Untitled Placemark</name>
+				<LookAt>
+					<longitude>-73.16404534354406</longitude>
+					<latitude>-39.06350060201189</latitude>
+					<altitude>0</altitude>
+					<heading>0.1381389490603012</heading>
+					<tilt>4.502959532031682</tilt>
+					<range>42671.93369948853</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-73.16164222510402,-39.07386163513226,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Alvarez2008</name>
+			<Placemark>
+				<name>Untitled Placemark</name>
+				<LookAt>
+					<longitude>-72.87579192980684</longitude>
+					<latitude>-38.62187452643115</latitude>
+					<altitude>0</altitude>
+					<heading>-0.06987263349909306</heading>
+					<tilt>26.36382285082674</tilt>
+					<range>874.0604198779068</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-72.87855165273791,-38.62327627434494,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Luebert2000</name>
+			<Placemark>
+				<name>Untitled Placemark</name>
+				<Camera>
+					<longitude>-69.27882262439054</longitude>
+					<latitude>-25.14568426352881</latitude>
+					<altitude>250038.1826758029</altitude>
+					<heading>-4.0942608670397</heading>
+					<tilt>8.304686834511074</tilt>
+					<roll>-2.58091997274714</roll>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</Camera>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-68.7643532038305,-24.80528614008949,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>
