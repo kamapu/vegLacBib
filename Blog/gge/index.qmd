@@ -1,0 +1,76 @@
+---
+title: Georeferencing in Google Earth
+date: '2024-06-30'
+author: Miguel Alvarez
+date-modified: today
+image: images/gee-cover.png
+categories:
+  - Tutorial
+description:
+  Instructions to georeference using Google Earth.
+draft: false
+---
+
+```{r}
+#| echo: false
+#| message: false
+library(sf)
+Bib <- readRDS("../../data/Localities.rds")
+```
+
+# Introduction
+
+
+These are preliminary instructions for georeferencing locations manually extracted from publications.
+This information can usually be found in the *Materials and methods* or *Study site* sections.
+
+We will use the following publication as an example:
+
+> `r with(Bib, citation[bibtexkey == "Luebert2000"])`
+
+::: {.callout-tip}
+## Install Google Earth
+
+If you have not already done so, you will need to install **Google Earth Pro** on your desktop.
+To do this, visit [this link](https://www.google.com/earth/about/versions/#earth-pro).
+:::
+
+When you open Google Earth, you will see a left pane that resembles a file browser and is organised into two top-level categories, **My Places** and **Temporary Places**.
+
+# Manual georeferencing workflow
+
+## Organize publications as folders
+
+Right-click on **My Places** and select **Add -> Folder** from the pop-up menu.
+This will create a folder with a name of your choice.
+In this example we have used the name **georeferenced-papers**.
+
+Now right-click on the new folder and follow the same steps to create a subfolder.
+This time name the subfolder with the publication ID, which in our example is **Luebert2000**.
+It is very important to avoid mistakes in this step, otherwise the merging of coordinates with the reference entry in the database may fail.
+
+![](images/browser-1.png){width="20%" fig-align="center"}
+
+
+## Insert placemarks for single publications
+
+To add placemarks, first select the folder for your publication (left-click on the left pane), then go to the menu bar at the top and click on the **Add Placemark** icon: ![](images/add-placemark.png){height=50}
+
+The placemark will appear in the middle of your screen, but you can drag and drop it to the right location.
+
+![](images/gee-map.png){width="80%" fig-align="center"}
+
+You can collect several publication localities in your defined folder before exporting to KML and submitting to the database custodian.
+Each publication folder can contain more than one placemark (in the case of multiple survey locations).
+For comparison, you can look at [this example](../../data-raw/georeferenced-papers.kml).
+
+
+![](images/browser-2.png){width="20%" fig-align="center"}
+
+
+# Export and submit
+
+When you are finished and would like to submit your progress, you need to select your main folder (in this example **georeferenced-papers**) and **right-click -> Save Place As ...**.
+Browse to your destination folder and make sure you select **Files of type: Kml (\*.kml)** (the drop down menu at the bottom of the wizard).
+
+Well done! You can now send the kml file you have created to the database administrator.
