@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Miguel Alvarez">
+<meta name="dcterms.date" content="2024-06-30">
+<meta name="description" content="Instructions to georeference using Google Earth.">
 
-<title>People</title>
+<title>Georeferencing in Google Earth</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//images/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -79,8 +82,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -90,21 +93,21 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./updates.html"> 
+    <a class="nav-link" href="../../updates.html"> 
 <span class="menu-text">Updates</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./people.html" aria-current="page"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
 </ul>
@@ -119,22 +122,60 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#manual-georeferencing-workflow" id="toc-manual-georeferencing-workflow" class="nav-link" data-scroll-target="#manual-georeferencing-workflow"><span class="header-section-number">2</span> Manual georeferencing workflow</a>
+  <ul class="collapse">
+  <li><a href="#organize-publications-as-folders" id="toc-organize-publications-as-folders" class="nav-link" data-scroll-target="#organize-publications-as-folders"><span class="header-section-number">2.1</span> Organize publications as folders</a></li>
+  <li><a href="#insert-placemarks-for-single-publications" id="toc-insert-placemarks-for-single-publications" class="nav-link" data-scroll-target="#insert-placemarks-for-single-publications"><span class="header-section-number">2.2</span> Insert placemarks for single publications</a></li>
+  </ul></li>
+  <li><a href="#export-and-submit" id="toc-export-and-submit" class="nav-link" data-scroll-target="#export-and-submit"><span class="header-section-number">3</span> Export and submit</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">People</h1>
-</div>
+<h1 class="title">Georeferencing in Google Earth</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Tutorial</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Instructions to georeference using Google Earth.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Miguel Alvarez </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 30, 2024</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">June 29, 2024</p>
+    </div>
+  </div>
     
   </div>
   
@@ -143,10 +184,66 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Page in construction</p>
-<p><img src="images/dalle-workers.jpg" class="img-fluid"></p>
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>These are preliminary instructions for georeferencing locations manually extracted from publications. This information can usually be found in the <em>Materials and methods</em> or <em>Study site</em> sections.</p>
+<p>We will use the following publication as an example:</p>
+<blockquote class="blockquote">
+<p>
+Luebert F, Gajardo R (2000). “Vegetación de los Andes áridos del norte de Chile.” <em>Lazaroa</em>, <em>21</em>, 111-130.
+</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Install Google Earth
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you have not already done so, you will need to install <strong>Google Earth Pro</strong> on your desktop. To do this, visit <a href="https://www.google.com/earth/about/versions/#earth-pro">this link</a>.</p>
+</div>
+</div>
+<p>When you open Google Earth, you will see a left pane that resembles a file browser and is organised into two top-level categories, <strong>My Places</strong> and <strong>Temporary Places</strong>.</p>
+</section>
+<section id="manual-georeferencing-workflow" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Manual georeferencing workflow</h1>
+<section id="organize-publications-as-folders" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="organize-publications-as-folders"><span class="header-section-number">2.1</span> Organize publications as folders</h2>
+<p>Right-click on <strong>My Places</strong> and select <strong>Add -&gt; Folder</strong> from the pop-up menu. This will create a folder with a name of your choice. In this example we have used the name <strong>georeferenced-papers</strong>.</p>
+<p>Now right-click on the new folder and follow the same steps to create a subfolder. This time name the subfolder with the publication ID, which in our example is <strong>Luebert2000</strong>. It is very important to avoid mistakes in this step, otherwise the merging of coordinates with the reference entry in the database may fail.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/browser-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
+</figure>
+</div>
+</section>
+<section id="insert-placemarks-for-single-publications" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="insert-placemarks-for-single-publications"><span class="header-section-number">2.2</span> Insert placemarks for single publications</h2>
+<p>To add placemarks, first select the folder for your publication (left-click on the left pane), then go to the menu bar at the top and click on the <strong>Add Placemark</strong> icon: <img src="images/add-placemark.png" height="50"></p>
+<p>The placemark will appear in the middle of your screen, but you can drag and drop it to the right location.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/gee-map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p>You can collect several publication localities in your defined folder before exporting to KML and submitting to the database custodian. Each publication folder can contain more than one placemark (in the case of multiple survey locations). For comparison, you can look at <a href="../../data-raw/georeferenced-papers.kml">this example</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/browser-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="export-and-submit" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Export and submit</h1>
+<p>When you are finished and would like to submit your progress, you need to select your main folder (in this example <strong>georeferenced-papers</strong>) and <strong>right-click -&gt; Save Place As …</strong>. Browse to your destination folder and make sure you select <strong>Files of type: Kml (*.kml)</strong> (the drop down menu at the bottom of the wizard).</p>
+<p>Well done! You can now send the kml file you have created to the database administrator.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
