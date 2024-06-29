@@ -10,18 +10,24 @@ permissions: write-all
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Install and activate renv
-        run: |
-          install.packages("renv")
-          renv::activate()
-          renv::restore()
-        shell: Rscript {0}
+      - name: Install dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::rmarkdown, local::.
+          needs: website
+
+#      - name: Install and activate renv
+#        run: |
+#          install.packages("renv")
+#          renv::activate()
+#          renv::restore()
+#        shell: Rscript {0}
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
