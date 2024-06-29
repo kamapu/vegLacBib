@@ -14,14 +14,16 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Install and activate renv
+        run: |
+          install.packages("renv")
+          renv::activate()
+          renv::restore()
+        shell: Rscript {0}
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install packages
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            any::rmarkdown
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
