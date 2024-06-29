@@ -30,4 +30,5 @@ format:
     theme: litera
     css: styles.css
     toc: true
+    number-sections: true
     mainfont: FreeSans

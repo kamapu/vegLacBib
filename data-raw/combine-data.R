@@ -29,7 +29,7 @@ for (i in 1:nrow(Bib)) {
       bibtexkey = Bib$bibtexkey[i],
       citation = markdownToHTML(paste(capture.output(print(as(Bib[i, ],
                           "bibentry"))),
-              collapse = "")))
+              collapse = " "), fragment.only = TRUE))
 }
 Refs <- do.call(rbind, Refs)
 
