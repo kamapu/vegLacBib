@@ -5,6 +5,12 @@ on:
 
 name: Quarto Publish
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -23,7 +29,6 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
