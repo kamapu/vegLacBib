@@ -11,6 +11,13 @@ description:
 draft: false
 ---
 
+```{r}
+#| echo: false
+library(biblio)
+Bib <- read_bib("references.bib")
+```
+
+
 Hello!
 
 
