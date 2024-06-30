@@ -41,7 +41,7 @@ When you open Google Earth, you will see a left pane that resembles a file brows
 
 ## Organize publications as folders
 
-Right-click on **My Places** and select **Add -> Folder** from the pop-up menu.
+Right-click on **My Places** and select in the pop-up menu **Add -> Folder**.
 This will create a folder with a name of your choice.
 In this example we have used the name **georeferenced-papers**.
 
@@ -53,6 +53,11 @@ It is very important to avoid mistakes in this step, otherwise the merging of co
 
 
 ## Insert placemarks for single publications
+
+In our example, the publication contains a map in which a rectangle is highlighted that includes the **Salar de Punta Negra** and the **Parque Nacional Llullaillaco**.
+We will therefore place a point in the centre of this rectangle.
+
+![](images/Luebert2000-map.png){width="80%" fig-align="center"}
 
 To add placemarks, first select the folder for your publication (left-click on the left pane), then go to the menu bar at the top and click on the **Add Placemark** icon: ![](images/add-placemark.png){height=50}
 
