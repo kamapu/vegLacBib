@@ -25,14 +25,14 @@
     "href": "Blog/gge/index.html#organize-publications-as-folders",
     "title": "Georeferencing in Google Earth",
     "section": "2.1 Organize publications as folders",
-    "text": "2.1 Organize publications as folders\nRight-click on My Places and select Add -&gt; Folder from the pop-up menu. This will create a folder with a name of your choice. In this example we have used the name georeferenced-papers.\nNow right-click on the new folder and follow the same steps to create a subfolder. This time name the subfolder with the publication ID, which in our example is Luebert2000. It is very important to avoid mistakes in this step, otherwise the merging of coordinates with the reference entry in the database may fail."
+    "text": "2.1 Organize publications as folders\nRight-click on My Places and select in the pop-up menu Add -&gt; Folder. This will create a folder with a name of your choice. In this example we have used the name georeferenced-papers.\nNow right-click on the new folder and follow the same steps to create a subfolder. This time name the subfolder with the publication ID, which in our example is Luebert2000. It is very important to avoid mistakes in this step, otherwise the merging of coordinates with the reference entry in the database may fail."
   },
   {
     "objectID": "Blog/gge/index.html#insert-placemarks-for-single-publications",
     "href": "Blog/gge/index.html#insert-placemarks-for-single-publications",
     "title": "Georeferencing in Google Earth",
     "section": "2.2 Insert placemarks for single publications",
-    "text": "2.2 Insert placemarks for single publications\nTo add placemarks, first select the folder for your publication (left-click on the left pane), then go to the menu bar at the top and click on the Add Placemark icon: \nThe placemark will appear in the middle of your screen, but you can drag and drop it to the right location.\n\n\n\n\n\nYou can collect several publication localities in your defined folder before exporting to KML and submitting to the database custodian. Each publication folder can contain more than one placemark (in the case of multiple survey locations). For comparison, you can look at this example."
+    "text": "2.2 Insert placemarks for single publications\nIn our example, the publication contains a map in which a rectangle is highlighted that includes the Salar de Punta Negra and the Parque Nacional Llullaillaco. We will therefore place a point in the centre of this rectangle.\n\n\n\n\n\nTo add placemarks, first select the folder for your publication (left-click on the left pane), then go to the menu bar at the top and click on the Add Placemark icon: \nThe placemark will appear in the middle of your screen, but you can drag and drop it to the right location.\n\n\n\n\n\nYou can collect several publication localities in your defined folder before exporting to KML and submitting to the database custodian. Each publication folder can contain more than one placemark (in the case of multiple survey locations). For comparison, you can look at this example."
   },
   {
     "objectID": "index.html",
