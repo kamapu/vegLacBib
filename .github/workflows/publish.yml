@@ -33,6 +33,7 @@ jobs:
             any::knitr
             any::rmarkdown
             any::sf
+            any::leaflet
 
       - name: Setup pandoc
         uses: r-lib/actions/setup-pandoc@v2

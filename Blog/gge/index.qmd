@@ -49,7 +49,7 @@ Now right-click on the new folder and follow the same steps to create a subfolde
 This time name the subfolder with the publication ID, which in our example is **Luebert2000**.
 It is very important to avoid mistakes in this step, otherwise the merging of coordinates with the reference entry in the database may fail.
 
-![](images/browser-1.png){width="20%" fig-align="center"}
+![](images/browser-1.png){width="40%" fig-align="center"}
 
 
 ## Insert placemarks for single publications
@@ -65,7 +65,7 @@ Each publication folder can contain more than one placemark (in the case of mult
 For comparison, you can look at [this example](../../data-raw/georeferenced-papers.kml).
 
 
-![](images/browser-2.png){width="20%" fig-align="center"}
+![](images/browser-2.png){width="40%" fig-align="center"}
 
 
 # Export and submit

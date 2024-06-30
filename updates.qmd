@@ -2,6 +2,37 @@
 title: Updates
 ---
 
-Page in construction
+```{r}
+#| echo: false
+#| message: false
+library(sf)
+library(leaflet)
+Localities <- readRDS("data/Localities.rds")
+```
 
-![](images/dalle-workers.jpg)
+# Statistics
+
+Currently, **`r length(unique(Localities$bibtexkey))`** bibliographic references are processed.
+You can download the list in BibTeX-format [here](data-raw/references.bib).
+
+::: {.callout-tip}
+## Further tables and figures
+
+Further tables and figures can be included in this section to show the status quo of the database.
+:::
+
+# Geographic distribution
+
+According to manual extraction of coordinates, this is the distribution of the studied localities.
+
+```{r}
+#| echo: false
+leaflet(Localities) %>%
+    addTiles(group = "osm") %>%
+    addProviderTiles("OpenTopoMap", group = "topography") %>%
+    addProviderTiles("Esri.WorldImagery", group = "satellite") %>%
+    addCircleMarkers(radius = 5, color = "yellow", weight = 3, opacity = 0.7, fillColor = "#da1ac2", fillOpacity = 0.7, popup = ~citation) %>%
+    addLayersControl(
+      baseGroups = c("osm", "topography", "satellite")
+    )
+```
